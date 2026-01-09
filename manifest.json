@@ -1,23 +1,20 @@
 {
-  "name": "Food Shop Tally",
-  "short_name": "Tally",
-  "start_url": "/",
+  "name": "Sri YogaBala Snacks Corner",
+  "short_name": "YogaBala",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0f172a",
+  "theme_color": "#ff9800",
   "icons": [
-  {
-    "src": "/Snacks-corner-Tally-Application/logo.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  },
-  {
-    "src": "/Snacks-corner-Tally-Application/logo.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }
-]
-
+    {
+      "src": "logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
-
-
