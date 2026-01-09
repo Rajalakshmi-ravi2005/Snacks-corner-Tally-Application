@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri YogaBala Snacks Corner</title>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0f172a">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff9800">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo-512.png">
+
     <style>
         * {margin:0;padding:0;box-sizing:border-box;}
         body {font-family:Arial,sans-serif;background:#f4f4f4;padding:10px;}
@@ -594,11 +597,15 @@
         updateTotals();
         showReport(null,'daily');
     // Register service worker (for installable app)
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js")
-    .then(() => console.log("Service Worker Registered"))
-    .catch(err => console.log("SW failed", err));
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('SW registered', reg))
+      .catch(err => console.error('SW failed', err));
+  });
 }
+
     </script>
 </body>
 </html>
+
